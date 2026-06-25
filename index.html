@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caribe Travel RD</title>
+
+    <!-- Fuente Profesional -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENÚ -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                ✈ Caribe Travel RD
+            </div>
+
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>Viaja desde República Dominicana al mundo</h1>
+
+                <p>
+                    Descubre destinos increíbles y vive experiencias inolvidables.
+                </p>
+
+                <a href="#destinos" class="btn">
+                    Explorar Destinos
+                </a>
+            </div>
+        </section>
+    </header>
+
+    <!-- DESTINOS -->
+    <section class="destinos" id="destinos">
+
+        <h2>Destinos Más Populares</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://dimexdonde.es/wp-content/uploads/2025/09/10.-feb-lugares-para-visitar-en-espana-arma-el-mejor-plan-con-tu-familia-y-amigos.jpg
+                " alt="">
+                <h3>España 🇪🇸</h3>
+                <p>Madrid, Barcelona y Sevilla.</p>
+                <button onclick="mostrarInfo('espana')">Ver Lugares</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325" alt="">
+                <h3>Brasil 🇧🇷</h3>
+                <p>Playas, carnaval y aventura.</p>
+                <button onclick="mostrarInfo('brasil')">Ver Lugares</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11" alt="">
+                <h3>Suecia 🇸🇪</h3>
+                <p>Paisajes impresionantes.</p>
+                <button onclick="mostrarInfo('suecia')">Ver Lugares</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114" alt="">
+                <h3>Francia 🇫🇷</h3>
+                <p>Arte, historia y romance.</p>
+                <button onclick="mostrarInfo('francia')">Ver Lugares</button>
+            </div>
+
+            <div class="card">
+                <img src="https://imgs.search.brave.com/t2mFgjhckr5JJ7xNHWb6-GMqzTpHbpjsSAWkhPVlP40/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dHJpcHphemEuY29t/L2VzL2Rlc3RpbmF0/aW9ucy93cC1jb250/ZW50L3VwbG9hZHMv/MjAxNy8wNC9JdGFs/eS0xLVZhdGljYW4t/Q2l0eS1lMTQ5Mjkw/NTcxMzUyMi5qcGc
+                " alt="">
+                <h3>Italia 🇮🇹</h3>
+                <p>Historia y gastronomía.</p>
+                <button onclick="mostrarInfo('italia')">Ver Lugares</button>
+            </div>
+
+            <div class="card">
+                <img src="https://imgs.search.brave.com/j0RzpBfCba5iH91bTtX5oph8Hwx6BHDi961EgcwN6eo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aXBz/cGFyYXR1dmlhamUu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzA4L21vbnRl/LWZ1amktamFwb24u/anBn
+                " alt="">
+                <h3>Japón 🇯🇵</h3>
+                <p>Tecnología y tradición.</p>
+                <button onclick="mostrarInfo('japon')">Ver Lugares</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OFERTAS -->
+    <section class="ofertas" id="ofertas">
+
+        <h2>Ofertas Especiales</h2>
+
+        <div class="ofertas-container">
+
+            <div class="oferta">
+                <h3>España</h3>
+                <p>Desde US$899</p>
+            </div>
+
+            <div class="oferta">
+                <h3>Brasil</h3>
+                <p>Desde US$699</p>
+            </div>
+
+            <div class="oferta">
+                <h3>Francia</h3>
+                <p>Desde US$1,099</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="reservas" id="reservas">
+
+        <h2>Reserva Tu Viaje</h2>
+
+        <form>
+
+            <input type="text" placeholder="Nombre Completo">
+
+            <input type="email" placeholder="Correo Electrónico">
+
+            <select>
+                <option>Seleccione un destino</option>
+                <option>España</option>
+                <option>Brasil</option>
+                <option>Suecia</option>
+                <option>Francia</option>
+                <option>Italia</option>
+                <option>Japón</option>
+            </select>
+
+            <input type="date">
+
+            <button type="submit">
+                Reservar Ahora
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="cerrar" onclick="cerrarModal()">
+                &times;
+            </span>
+
+            <div id="contenidoModal"></div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+
+        <h3>Caribe Travel RD</h3>
+
+        <p>
+            Tu agencia de viajes de confianza.
+        </p>
+
+        <p>
+            © 2026 Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
